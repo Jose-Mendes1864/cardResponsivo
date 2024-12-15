@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+    --larguraLeft: 45vw;
+    --larguraRight: 45vh
+}
+*{
+    box-sizing: border-box !important;
+}
+body{
+    background-color: #c1cdb6 !important;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    
+}
+.englobaProfile{
+    box-sizing: border-box;
+    margin-left: 40px;
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+    background-color: #2f3e96;
+    display: flex;
+    justify-content: center;
+
+}
+.profile{
+  
+    width: 40vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 15px;
+    -webkit-box-shadow: 14px 13px 105px -3px rgba(0,0,0,0.44);
+-moz-box-shadow: 14px 13px 105px -3px rgba(0,0,0,0.44);
+box-shadow: 14px 13px 105px -3px rgba(0,0,0,0.44);
+
+    
+}
+.divProfile{
+    height: 100%;
+}
+.person{
+    height: 100%;
+    position: relative;
+    left: -2vw;
+    display: flex;
+    align-items: center;
+    width: var(--larguraLeft);
+}
+
+.person  img{
+   border-radius: 10px;
+   height: 80%;
+}
+.write{
+  
+    padding-right: 1vw ;
+    width: var(--larguraRight);
+    /* background-color: #2f3e96 !important; */
+}
+.name{
+    font-family: 'Inter', sans-serif;
+    font-size: 2vw;
+}
+.skills{
+
+    display: flex;
+}
+.skills .sk{
+
+    margin: 0.2vw;
+    border-radius: 15px;
+    padding: 0px 1vw;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+
+}
+.sk1{
+    border: 1px solid #2f3e96;
+    color: #2f3e96;
+
+}
+.sk2{
+    border: 1px solid #db2e2e;
+    color:  #db2e2e;
+}
+.sk3{
+    border: 1px solid #0c3414;
+    color:#0c3414 ;
+}
+.description{
+    font-size: 1vw;
+}
+.profile .divBtn{
+    display: flex;
+    justify-content: right;
+   padding-right: 2vw;
+}
+.divBtn > button{
+    background-color: rgb(168, 0, 0);
+    margin-top: 2vh;
+    border: none;
+    border-radius: 30px;
+    padding: 0.3vw;
+ 
+
+    width: 11vw;
+    height: auto;
+   
+    color: white;
+    font-weight: 600;
+    font-size: 1vw;
+    
+    
+
+}
+
+
+
+@media (max-width: 1000px) {
+    .divProfile{
+        flex-direction: column;
+    }
+    .profile{
+        height:60vw;
+        width: 54vw;
+    }
+    .write{
+        width: 100%;
+        padding: 0;
+    }
+    .skills{
+       justify-content: center;
+    }
+    .skills .sk{
+        font-size: 2vw;
+    }
+    .name{
+        text-align: center;
+        font-size: 6vw;
+    }
+    
+    .person{
+     
+        /* background: #2f3e96; */
+        display: flex;
+        justify-content: center;
+        margin-top: -12.5vw;
+        width: 100%;
+        left: 0;
+        height: auto;
+       
+    }
+    .person img{
+        width: 25vw;
+        height:25vw;
+        border-radius: 50%;
+        border: 4px groove black;
+
+    }
+    .description{
+        padding: 3px;
+        font-size: 3vw;
+    }
+    
+    .divBtn > button{
+        margin-top: 1.5vh;
+        
+        width: 22vw;
+
+        font-size: 2.5vw;
+        
+    }
+  } 
